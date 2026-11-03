@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI企業網站建置課程"
+  short_description: "帶領學員完成企業形象網站建置與發布"
+  default_prompt: "使用 AI企業網站建置課程，依我的客戶資料一步一步建立企業形象網站。"

@@ -1,0 +1,14 @@
+# Local dependencies and build output
+node_modules/
+dist/
+.astro/
+.npm-cache/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Local system files
+.DS_Store
+Thumbs.db
