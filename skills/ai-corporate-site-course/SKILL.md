@@ -21,6 +21,8 @@ description: 帶領學員以 Codex、Astro、GitHub Desktop 與 Cloudflare 建�
 - 先產出平面設計確認稿，再開始寫網站。設計稿要能檢核區塊、色彩、字體、字級、圖片方向及手機版差異。
 - 標準發布流程是：**本機預覽與人工核准 → GitHub 備份 → Cloudflare 部署 → 正式網址驗證**。
 - 未得到明確發布同意前，只能修改本機版本；不可 commit、push 或公開部署。
+- 使用者說「公開網站」、「上線」、「部署」或同義詞時，一律視為啟動**發布硬閘門**，不是直接部署的指令。必須先逐項確認：本機驗收通過與核准、客戶自己的 GitHub 私有庫已建立、最新 Commit 已 Push 並可在 GitHub 看見、Cloudflare 已連接該 repository 的 `main` 分支。任一項未完成時，停止在該項並協助完成，絕不可跳過 GitHub 或直接上傳至 Cloudflare。
+- Cloudflare 必須以 GitHub repository 自動建置與部署；不可把手動上傳、`wrangler deploy` 或暫用網址部署當成正式發布的替代流程。僅在 GitHub Push 成功後，才可觸發或等候 Cloudflare 建置。
 - 形象網站優先使用 Astro 與 Markdown／JSON。表單優先使用客戶自己的 Google Forms；不把密碼、金鑰或個資寫入原始碼。
 
 ## 各階段路由
@@ -41,7 +43,7 @@ description: 帶領學員以 Codex、Astro、GitHub Desktop 與 Cloudflare 建�
 
 ### 備份與發布
 
-讀取 [`references/發布與更新.md`](references/發布與更新.md)。教學優先採 GitHub Desktop，不要求學員使用命令列。任何 GitHub、Cloudflare、網域或 DNS 的變更，都要在執行前明確說明影響，且僅在使用者已核准該步驟時操作。
+讀取 [`references/發布與更新.md`](references/發布與更新.md)。教學優先採 GitHub Desktop，不要求學員使用命令列。先列出發布硬閘門的四項狀態並取得本次發布的明確同意，再依序完成 GitHub 私有庫、Commit／Push 驗證、Cloudflare Git 連線、暫用網址驗證與正式網域驗證。任何 GitHub、Cloudflare、網域或 DNS 的變更，都要在執行前明確說明影響，且僅在使用者已核准該步驟時操作。
 
 ## 對話方式
 
