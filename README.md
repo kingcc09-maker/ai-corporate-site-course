@@ -43,6 +43,18 @@
 
 > 本課程不啟用付費服務，也不在客戶確認前公開部署。
 
+## 一鍵安裝課程 Skill
+
+本庫公開後，學員只需在 Codex 對話框貼上以下一句，不必開啟命令提示字元，也不必登入講師的 GitHub 帳號：
+
+```text
+$skill-installer 請從 GitHub 儲存庫 kingcc09-maker/ai-corporate-site-course 安裝 AI 企業網站建置課程 Skill。
+```
+
+安裝完成後重新開啟 Codex 對話，即可使用 Skill 開始資料收集與設計流程。
+
 ## GitHub 發布結構
 
 此資料夾可直接作為 GitHub 範本庫。`skills/ai-corporate-site-course/` 是可安裝的 Codex Skill；其他 Markdown 是給學員閱讀、下載和授課使用的教材。課程公開前，須再次檢查其中沒有客戶資料、帳號、網域、圖片或任何機密資訊。
+
+課程範本庫只負責發放教材與 Skill，**不是學員的網站儲存庫**。公開 Skill 的安裝不需要學員 GitHub 帳號；但每位學員仍須在建立客戶網站備份時，使用自己的 GitHub 帳號為每個客戶建立獨立的私有網站儲存庫。不可登入、共用或使用講師帳號。

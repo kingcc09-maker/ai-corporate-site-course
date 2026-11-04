@@ -12,3 +12,9 @@ dist/
 # Local system files
 .DS_Store
 Thumbs.db
+
+# Local course-production working files (not for public distribution)
+.build/
+.codex-finalizer/
+簡報/
+NotebookLM_課程來源講義.md
