@@ -1,0 +1,4 @@
+interface:
+  display_name: "既有企業網站 SEO／AI 搜尋更新"
+  short_description: "盤點並以本機優先方式升級既有企業網站的 SEO 與 AI 搜尋可讀性"
+  default_prompt: "請用既有企業網站 SEO／AI 搜尋更新模式，先盤點這個網站並提出本機更新清單；未經我同意不要發布。"

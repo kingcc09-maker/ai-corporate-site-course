@@ -12,6 +12,7 @@
 - 一個 Cloudflare Workers 免費部署網站。
 - 一個綁定完成的正式網域（選配）。
 - 一套「本機預覽 → 人工確認 → 備份 → 自動部署」的更新標準流程。
+- 一套可安裝的既有網站 SEO／AI 搜尋更新模式。
 
 ## 教材順序
 
@@ -21,6 +22,7 @@
 4. [04_檢查清單.md](04_檢查清單.md)：設計、上線與更新時的核對表。
 5. [教材範本/企業形象網站資料收集表.md](教材範本/企業形象網站資料收集表.md)：交給客戶填寫的範本。
 6. [學員啟動方式.md](學員啟動方式.md)：從 GitHub 安裝並以一句提示開始。
+7. [skills/corporate-site-seo-ai-update/](skills/corporate-site-seo-ai-update/)：既有網站的本機盤點、更新與驗收 skill。
 
 ## 核心原則
 
@@ -29,6 +31,7 @@
 3. 每個客戶各自使用獨立資料夾、GitHub 私有儲存庫、Cloudflare 專案與網域。
 4. 形象網站優先使用 Markdown／JSON 內容，不為了方便而過早建立資料庫。
 5. 發布前確認文案、圖片、商標、聯絡資料皆有使用權與核准。
+6. SEO 與 AI 搜尋可見度從資料收集與本機驗收開始；不承諾排名或 AI 摘要收錄。
 
 ## 建議工具與費用
 
@@ -52,6 +55,16 @@ $skill-installer 請從 GitHub 儲存庫 kingcc09-maker/ai-corporate-site-course
 ```
 
 安裝完成後重新開啟 Codex 對話，即可使用 Skill 開始資料收集與設計流程。
+
+## 一鍵安裝既有網站更新 Skill
+
+既有網站要補做 SEO／AI 搜尋更新時，學員可直接貼上：
+
+```text
+$skill-installer 請從 GitHub 儲存庫 kingcc09-maker/ai-corporate-site-course 的 skills/corporate-site-seo-ai-update 安裝既有企業網站 SEO／AI 搜尋更新 Skill。
+```
+
+安裝後只需說明專案路徑，即可先取得本機盤點與更新清單；不會直接發布。
 
 ## GitHub 發布結構
 
